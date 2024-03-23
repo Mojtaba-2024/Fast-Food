@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins";
+}
+
+:root {
+    --color_C90000: #C90000;
+    --color_7D7C7C: #7D7C7C;
+    --color_504F4F: #504F4F;
+    --color_323232: #323232;
+    --color_FFC300: #FFC300;
+    --color_FFF6A3: #FFF6A3;
+    --color_E3E3E3: #E3E3E3;
+    --color_fff: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/poppins/poppins-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "poppins medum";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/poppins/poppins-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "poppins semibold";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/poppins/poppins-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "poppins light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/poppins/poppins-light-webfont.woff") format("woff");
+}
+
+.main_header {
+    margin-top: 1rem;
+}
+
+.container_site {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 54px 635px 193px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navigation ul li:first-child a {
+    color: var(--color_C90000);
+    font-weight: 600;
+}
+
+.navigation ul li:not(:first-child) a {
+    color: var(--color_7D7C7C);
+    font-weight: 500;
+}
+
+.navigation ul li a {
+    font-weight: 500;
+}
+
+.link_navigation a {
+    border: 1px solid var(--color_C90000);
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.link_navigation a:first-child {
+    color: var(--color_C90000);
+    font-weight: 300;
+}
+
+.link_navigation a:last-child {
+    background-color: var(--color_C90000);
+    color: var(--color_fff);
+    font-weight: 500;
+}
