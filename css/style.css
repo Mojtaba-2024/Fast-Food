@@ -8,6 +8,14 @@ body {
     font-family: "poppins";
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 :root {
     --color_C90000: #C90000;
     --color_7D7C7C: #7D7C7C;
@@ -19,13 +27,6 @@ body {
     --color_fff: #fff;
 }
 
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
 
 @font-face {
     font-family: "poppins";
@@ -35,21 +36,21 @@ a {
 }
 
 @font-face {
-    font-family: "poppins medum";
+    font-family: "poppins";
     font-style: normal;
     font-weight: 500;
     src: url("../fonts/poppins/poppins-medium-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "poppins semibold";
+    font-family: "poppins";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/poppins/poppins-semibold-webfont.woff") format("woff");
 }
 
 @font-face {
-    font-family: "poppins light";
+    font-family: "poppins";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/poppins/poppins-light-webfont.woff") format("woff");
@@ -66,7 +67,7 @@ a {
 
 .navigation {
     display: grid;
-    grid-template-columns: 54px 635px 193px;
+    grid-template-columns: 58px 635px 193px;
     justify-content: space-between;
     align-items: center;
 }
@@ -78,14 +79,14 @@ a {
     gap: 2.5rem;
 }
 
-.navigation ul li:first-child a {
-    color: var(--color_C90000);
-    font-weight: 600;
-}
-
 .navigation ul li:not(:first-child) a {
     color: var(--color_7D7C7C);
     font-weight: 500;
+}
+
+.navigation ul li:first-child a {
+    color: var(--color_C90000);
+    font-weight: 600;
 }
 
 .navigation ul li a {
@@ -95,17 +96,17 @@ a {
 .link_navigation a {
     border: 1px solid var(--color_C90000);
     padding: 9px 16px;
-    border-radius: 20px;
     font-size: 16px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .link_navigation a:first-child {
     color: var(--color_C90000);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .link_navigation a:last-child {
