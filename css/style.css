@@ -56,6 +56,13 @@ ul {
     src: url("../fonts/poppins/poppins-light-webfont.woff") format("woff");
 }
 
+@font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/poppins/poppins-regular-webfont.woff") format("woff");
+}
+
 .main_header {
     margin-top: 1rem;
 }
@@ -156,26 +163,51 @@ ul {
     display: block;
 }
 
-@media(max-width:834px) {
-    .navigation {
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .navigation>ul {
-        display: none;
-    }
-
-    .link_navigation {
-        justify-self: center;
-    }
-
-    .menu_icon {
-        justify-self: flex-end;
-    }
+.header_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-@media(min-width:835px) {
-    .menu_icon {
-        display: none;
-    }
+.content_left_header_bottom {
+    align-self: center;
+}
+
+.content_left_header_bottom h1 {
+    color: var(--color_C90000);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 76px;
+}
+
+.content_left_header_bottom p {
+    color: var(--color_504F4F);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 78%;
+}
+
+.order_food {
+    margin-top: 3rem;
+}
+
+.text_price_order_food {
+    color: var(--color_323232);
+    margin-bottom: 1rem;
+}
+
+.text_price_order_food span:first-child {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text_price_order_food span:last-child {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.action_order {
+    display: flex;
+    justify-content: space-between;
+    max-width: 79%;
 }
