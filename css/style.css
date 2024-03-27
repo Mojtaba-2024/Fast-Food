@@ -25,6 +25,7 @@ ul {
     --color_FFF6A3: #FFF6A3;
     --color_E3E3E3: #E3E3E3;
     --color_fff: #fff;
+    --color_rgb_241: rgba(241, 241, 241, 0.70);
 }
 
 
@@ -174,17 +175,17 @@ ul {
 
 .content_left_header_bottom h1 {
     color: var(--color_C90000);
-    font-size: 48px;
+    font-size: 3rem;
+    line-height: 72px;
     font-weight: 600;
-    line-height: 76px;
 }
 
 .content_left_header_bottom p {
     color: var(--color_504F4F);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
-    max-width: 78%;
+    max-width: 70%;
 }
 
 .order_food {
@@ -209,5 +210,73 @@ ul {
 .action_order {
     display: flex;
     justify-content: space-between;
-    max-width: 79%;
+    max-width: 82%;
+}
+
+.button_action_order {
+    max-width: 50%;
+    gap: 12px;
+    border: 1px solid var(--color_rgb_241);
+    background-color: var(--color_fff);
+    border-radius: 100px;
+    box-shadow: 0 10px 17px 0 rgba(112, 114, 176, 0.20);
+    padding: 8px 16px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_action_order button {
+    background-color: transparent;
+    border: none;
+}
+
+.button_action_order span {
+    color: var(--color_FFC300);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.button_action_order span::after,
+.button_action_order span::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 22px;
+    background-color: var(--color_rgb_241);
+    margin-left: 12px;
+}
+
+.button_action_order span::after {
+    margin-left: 12px;
+}
+
+.button_action_order span::before {
+    margin-right: 12px;
+}
+
+.action_order>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_FFC300);
+    box-shadow: 0px 20px 20px 0px var(--color_rgb_241);
+    border: none;
+    color: var(--color_323232);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 16px 24px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.action_order>button svg {
+    margin: -3px 5px 0 0;
 }
