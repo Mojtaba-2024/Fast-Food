@@ -24,8 +24,10 @@ ul {
     --color_FFC300: #FFC300;
     --color_FFF6A3: #FFF6A3;
     --color_E3E3E3: #E3E3E3;
+    --color_F1F1F1: #F1F1F1;
     --color_fff: #fff;
     --color_rgb_241: rgba(241, 241, 241, 0.70);
+    --color_rgb_241-040: rgba(241, 241, 241, 0.40);
 }
 
 
@@ -62,6 +64,10 @@ ul {
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/poppins/poppins-regular-webfont.woff") format("woff");
+}
+
+img {
+    width: 100%;
 }
 
 .main_header {
@@ -171,7 +177,47 @@ ul {
 
 .content_left_header_bottom {
     align-self: center;
+    width: 86%;
 }
+
+.fixed_food_delivery {
+    position: absolute;
+    top: 5rem;
+    left: -6rem;
+    border-radius: 50px 50px 0 50px;
+    border: 1px solid var(--color_F1F1F1);
+    background-color: var(--color_rgb_241-040);
+    padding: 12px;
+    text-align: center;
+    -webkit-border-radius: 50px 50px 0 50px;
+    -moz-border-radius: 50px 50px 0 50px;
+    -ms-border-radius: 50px 50px 0 50px;
+    -o-border-radius: 50px 50px 0 50px;
+}
+
+.fixed_food_delivery div {
+    display: flex;
+    align-items: center;
+}
+
+.fixed_food_delivery div span {
+    color: var(--color_323232);
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.fixed_food_delivery>span {
+    color: var(--color_7D7C7C);
+    display: block;
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.content_right_header_bottom {
+    position: relative;
+}
+
 
 .content_left_header_bottom h1 {
     color: var(--color_C90000);
@@ -277,6 +323,6 @@ ul {
     -o-border-radius: 100px;
 }
 
-.action_order > button svg {
+.action_order>button svg {
     margin: -3px 5px 0 0;
 }
