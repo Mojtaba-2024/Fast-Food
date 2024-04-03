@@ -66,6 +66,10 @@
     .menu_icon {
         justify-self: flex-end;
     }
+
+    .row_grid_food_products {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(min-width:835px) {
@@ -104,11 +108,12 @@
         position: static;
         width: 30%;
     }
-    .action_order > button {
+
+    .action_order>button {
         padding: 9px;
     }
 
-    .action_order > button svg {
+    .action_order>button svg {
         font-size: 19px;
         margin-top: -2px;
     }
@@ -117,5 +122,11 @@
 @media(min-width:677px) {
     .order_food-mobile {
         display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .row_grid_food_products {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
