@@ -511,18 +511,64 @@ img {
     font-weight: 400;
 }
 
+.grid_foods_off {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    margin-top: 1.8rem;
+}
+
 .item_food_off {
-    width: 370px;
+    /*width: 370px;
+    */
     height: 335px;
     border: 1px solid var(--color_E3E3E3);
     background-color: var(--color_F1F1F1);
     padding: 2rem 0 2rem 1.2rem;
     border-radius: 20px;
     overflow: hidden;
+    transition: all 250ms ease-in;
+    cursor: pointer;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+
+.item_food_off:hover .left_item_food_off h6 {
+    color: var(--color_FFC300);
+}
+
+.item_food_off:hover .left_item_food_off p,
+.item_food_off:hover .title_sm_item_food_off span:first-child,
+.item_food_off:hover .left_item_food_off del {
+    color: var(--color_fff);
+}
+
+.item_food_off:hover .price_off span {
+    color: var(--color_FFC300);
+}
+
+.item_food_off:hover .left_item_food_off button {
+    color: var(--color_323232);
+    background-color: var(--color_fff);
+}
+
+.item_food_off:hover .left_item_food_off button svg path {
+    fill: var(--color_323232);
+}
+
+.item_food_off:hover {
+    background-color: var(--color_C90000);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .row_info_food_off {
@@ -539,6 +585,12 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     margin: 0.9rem 0;
+    white-space: nowrap;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
 }
 
 .left_item_food_off p {
@@ -547,12 +599,23 @@ img {
     font-weight: 400;
     line-height: 24px;
     max-width: 10rem;
+    height: 44px;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
 }
 
 .price_off del {
     color: var(--color_7D7C7C);
     font-size: 16px;
     font-weight: 600;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
 }
 
 .price_off span {
@@ -561,6 +624,11 @@ img {
     font-weight: 600;
     margin-top: 0.5rem;
     display: inline-block;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
 }
 
 .left_item_food_off button {
@@ -587,11 +655,79 @@ img {
 }
 
 .right_item_food_off img {
-    transform: scale(2);
     position: relative;
     top: 25%;
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    right: 30%;
+    max-width: 273px;
+    max-height: 204px;
+    width: 273px;
+}
+
+.seconde_item_food_off .right_item_food_off img {
+    right: 55%;
+}
+
+.section_mobile_app {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: flex-end;
+    border: 1px solid var(--color_E3E3E3);
+    background-color: var(--color_F1F1F1);
+    border-radius: 0 500px 500px 0;
+    max-width: 90%;
+    margin-top: 10rem;
+    -webkit-border-radius: 0 500px 500px 0;
+    -moz-border-radius: 0 500px 500px 0;
+    -ms-border-radius: 0 500px 500px 0;
+    -o-border-radius: 0 500px 500px 0;
+}
+
+.img_section_mobile_app img {
+    height: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    transform: scale(1.1);
+    position: relative;
+    top: -18px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.content_section_mobile {
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.content_section_mobile h6 {
+    color: var(--color_7D7C7C);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content_section_mobile h4 {
+    color: var(--color_C90000);
+    font-size: 48px;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.content_section_mobile p {
+    color: var(--color_323232);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 90%;
+}
+
+.download_btn_app a {
+    margin-top: 32px;
+    width: 14%;
+    display: inline-block;
+}
+
+.download_btn_app a:last-child {
+    margin-left: 20px;
 }
